@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Link optimizer</title>
+    <style>
+        *{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+body{
+    background-image: url(2.png);
+    background-size: cover;
+}
+
+.main{
+    position: relative;
+    background-color: rgb(59, 2, 85);
+    height: 300px;
+    width: 500px;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%,50%);
+    border: 5px solid rgb(1, 1, 7);
+    border-radius: 20px;
+}
+
+#longurl{
+    position: relative;
+    top: 40%;
+    left: 10%;
+    height: 40px;
+    width: 296px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+    font-size: large;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#shorten{
+    position: relative;
+    top: 40%;
+    left: 12%;
+    height: 40px;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    font-family: monospace;
+    color: white;
+    background-color: purple;
+}
+
+#shorten:hover{
+    background-color: skyblue;
+}
+
+#shorturl{
+    position: relative;
+    top: 45%;
+    left: 10%;
+    height: 40px;
+    width: 270px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 47px;
+    font-size: large;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#copy{
+    position: relative;
+    top: 46%;
+    left: 0%;
+    height: 35px;
+    width: 35px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: purple;
+}
+
+#copy:hover{
+    background-color: skyblue;
+}
+
+.main p{
+    position: relative;
+    top: 30%;
+    left: 13%;
+    height: 60px;
+    width: 400px;
+    font-size: 50px;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgb(240, 228, 228);
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p>Link Optimizer</p>
+        <input type="text" placeholder="Enter the Link Here" id="longurl">
+        <button id="shorten">optimize</button><br>
+        <input type="text" placeholder="Short Link" id="shorturl">
+        <button id="copy">
+            <span class="material-symbols-outlined">copy</span>
+        </button>
+    </div>
+    <script src="logic.js"></script>
+    <script src="copy.js"></script>
+</body>
+</html>
